@@ -1,79 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="My bootstrap and custom MVC site.">
+<meta name="author" content="Daniel Koehler">
+<title>Home Page | Some Store</title>
+<script type="text/javascript" src="./assets/js/global.js"></script>
+<script type="text/javascript" src="./assets/js/parallax.js"></script>
+<script type="text/javascript" src="./assets/js/dkInterface.js"></script>
+<link href='./assets/css/dkInterface.css' rel='stylesheet' type='text/css'>
+<link href='./assets/css/style.css' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+<!-- <div id="row-1" class="row-1 full-column-12">
+	<div class="container">
+		<h1>Store Home</h1>
+	</div>
+</div> -->
+<div class="scroller-content full-window-height">
+	<div class="container padded vertical-perent-js-centring">
+		<div class="navigation">
+			<div class="container">
+				<ul class="navigation-bar left">
+					<li class="active">
+						<a href="/index" class="ajax-handled-anchor">Home<span class="navigation-unread">1</span>
+						</a>
+					</li>
+					<li>
+						<a href="/enquiries" class="ajax-handled-anchor">Messages<span class="navigation-unread">1</span></a>
+						<ul>
+							<li><a href="/product/manage">Manage Products</a></li>
+							<li><a href="/product/add">Add Product</a></li>
+							<li><a href="/product/add">Enquiries<span class="navigation-unread">1</span></a></li>
+						</ul> <!-- /Sub menu -->
+					</li>
+					<li>
+						<a href="/about">About Us</a>
+					</li>
+				</ul>
+				<ul class="navigation-bar right">
+					<li>
+						<a href="/user/profile">Daniel Koehler<span class="navigation-unread">1</span></a>
+						<ul>
+							<li><a href="/user/notifications">Notifications<span class="navigation-unread">1</span></a></li>
+							<li><a href="/user/logout">Logout</a></li>
+						</ul> <!-- /Sub menu -->
+					</li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<h1 class="extra-large centre">I would like to be the first to admit that flat user interface deisgn, with perspective, is a strange idea.</h1>
+		<div class="switch-container">
+			<label for="ie-emulation-checkbox">IE Emulation</label>
+			<div class="switch unselectable" title="Remove Html" id="remove-css">
+				<div class="switch-on">
+					<input type="checkbox" name="ie-emulation-checkbox">
+					<span class="switch-right">ON</span>
+					<!-- <label>&nbsp;</label> -->
+					<span class="switch-left">OFF</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="down-arrow-wrap smooth-navigation-next">
+		<span class="down-arrow">
+			<span class="arrow-down"></span>
+		</span>
+	</div>
+</div>
+<div class="scroller-back-layer-container">
+	<img src="./assets/images/scroller/image1.jpg" id="first-image">
+<!-- 	<div class="container" id="first-image">
+		<br>
+		<br>
+		<br>
+		<h1>Parallax Backing...</h1>
+		<p>This seems to work...</p>
+	</div> -->
+</div>
+<div class="scroller-content inverted">
+	<div class="container padded">
+		<h1 class="large centre">That would make this page completly orginal then... Great!</h1>
+		<p class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices magna magna, at tempor risus placerat sed. Quisque eros odio, interdum et tellus a, consequat sodales ligula.</p>
+		<br>
+		<div class="switch-container">
+			<label for="css-panda">Helpful CSS Panda</label>
+			<div class="switch unselectable" title="Remove Html" id="remove-css">
+				<div class="switch-off">
+					<input type="checkbox" name="css-panda">
+					<span class="switch-right">OFF</span>
+					<!-- <label>&nbsp;</label> -->
+					<span class="switch-left">ON</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="down-arrow-wrap smooth-navigation-next">
+		<span class="down-arrow">
+			<span class="arrow-down"></span>
+		</span>
+	</div>
+</div>
+<div class="scroller-back-layer-container">
+	<img src="./assets/images/scroller/image2.jpg" id="second-image">
+</div>
+<div class="scroller-content">
+	<div class="container padded">
+		<h1 class="large centre">Hang on a minute! Didn't some company recently overhall thier mobile operating system and do something very similar...</h1>
+		<p class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices magna magna, at tempor risus placerat sed. Quisque eros odio, interdum et tellus a, consequat sodales ligula.</p>
+	</div>
+	<div class="down-arrow-wrap smooth-navigation-next">
+		<span class="down-arrow">
+			<span class="arrow-down"></span>
+		</span>
+	</div>
+</div>
+<div class="scroller-back-layer-container">
+	<img src="./assets/images/scroller/image3.jpg"  id="third-image">
+</div>
+<div class="scroller-content inverted">
+	<div class="container padded">
+		<h1 class="large centre">Nah, I would have rembered...</h1>
+		<p class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices magna magna, at tempor risus placerat sed. Quisque eros odio, interdum et tellus a, consequat sodales ligula.</p>
+	</div>
+	<div class="down-arrow-wrap smooth-navigation-next">
+		<span class="down-arrow">
+			<span class="arrow-down"></span>
+		</span>
+	</div>
+</div>
+<div class="scroller-back-layer-container">
+	<img src="./assets/images/scroller/image4.jpg"  id="forth-image">
+</div>
+<div class="scroller-content">
+	<div class="container padded">
+		<h1 class="large centre">Aha, I have tricked you! You now have no option but to buy something.</h1>
+		<p class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices magna magna, at tempor risus placerat sed. Quisque eros odio, interdum et tellus a, consequat sodales ligula.</p>
+	</div>
+	<div class="down-arrow-wrap smooth-navigation-next">
+		<span class="down-arrow">
+			<span class="arrow-down"></span>
+		</span>
+	</div>
+</div>
+<div class="scroller-content inverted full-window-height">
+	<div class="container padded" id="login-panel">
+		<div class="navigation">
+			<div class="container">
+				<ul class="navigation-bar left">
+					<li class="active">
+						<a href="/index">Home<span class="navigation-unread">1</span>
+						</a>
+					</li>
+					<li>
+						<a href="/enquiries">Messages<span class="navigation-unread">1</span></a>
+						<ul>
+							<li><a href="/product/manage">Manage Products</a></li>
+							<li><a href="/product/add">Add Product</a></li>
+							<li><a href="/product/add">Enquiries<span class="navigation-unread">1</span></a></li>
+						</ul> <!-- /Sub menu -->
+					</li>
+					<li>
+						<a href="/about">About Us</a>
+					</li>
+				</ul>
+				<ul class="navigation-bar right">
+					<li>
+						<a href="/user/profile">Daniel Koehler<span class="navigation-unread">1</span></a>
+						<ul>
+							<li><a href="/user/notifications">Notifications<span class="navigation-unread">1</span></a></li>
+							<li><a href="/user/logout">Logout</a></li>
+						</ul> <!-- /Sub menu -->
+					</li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<h1 class="large centre">Now might I temp you to login or register? <br>(Yes I did just invert the colour. "How?" I hear you ask, well that would be some nicely classed OOCSS)</h1>
+		<p class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices magna magna, at tempor risus placerat sed. Quisque eros odio, interdum et tellus a, consequat sodales ligula.</p>
+		<form action="/user/login" method="post" class="ajax-action-handled-form styled padded-vertical">
+			<div class="input-group">
+				<label for="userlogin[username]"></label>
+				<input type="text" required="required" name="userlogin[username]" class="input has-label text" placeholder="Username">
+			</div>	
+			<div class="input-group">
+				<label for="userlogin[password]"></label>
+				<input type="password" required="required" name="userlogin[password]" class="input has-label text" placeholder="Password">
+			</div>	
+			<div class="input-group">
+				<button type="submit" class="input normal">Login</button>
+			</div>
+			<div class="input-group file">
+				<label for="product[image]">Example File Input</label>
+				<input type="file" required="required" name="product[image]" class="input has-label file" placeholder="Product Image">
+			</div>
+			<a href="#register">Need an account?</a>
+		</form>
+	</div>
+	<div class="up-arrow-wrap smooth-navigation-top">
+		<span class="up-arrow">
+			<span class="arrow-up"></span>
+		</span>
+	</div>
+</div>
+<script type="text/javascript">
+		// TEMP SOLUTION. REMOVE AT EARLIEST CONVENIENCE!
+		
+		document.getElementById('remove-css').addEventListener('dkswitched',function(){
+			var title = document.title
+			document.head.innerHTML = ""
+			document.title = title
+			document.body.innerHTML = "<p>Welcome to Internet Explorer</p><p>Sorry, something went wrong...</p>"
+		});
+		
+		// Start my Paralex 'class', god the no frameworks rule, I so wish I could have used 
+		parallax = new Parallax(['first-image','second-image','third-image','forth-image'],450);
+		parallax.start()
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Parallax : A concise JavaScript Parallax library." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Parallax</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/DanielKoehler/Parallax">View on GitHub</a>
-
-          <h1 id="project_title">Parallax</h1>
-          <h2 id="project_tagline">A concise JavaScript Parallax library.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/DanielKoehler/Parallax/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/DanielKoehler/Parallax/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Parallax maintained by <a href="https://github.com/DanielKoehler">DanielKoehler</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		//MOVE TO OWN UI JS LIB
+</script>	
+	</body>
 </html>
